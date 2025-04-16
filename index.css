@@ -81,7 +81,7 @@ nav > ul > li > a:hover {
     background: url('assets/menu_bullet.gif') no-repeat bottom;
 }
 
-#prednasky > div {
+#prednasky > div > div {
     display: flex;
     flex-direction: row;
 }
@@ -110,12 +110,12 @@ img {
     object-fit: contain ;
 }
 
-#prednasky > div > div {
+.pred {
     display: flex;
     flex-direction: column;
 }
 
-#prednasky > div {
+.pred > div {
     width: 100%;
     margin: auto ;
 }
@@ -192,4 +192,68 @@ footer {
 
 #souvisejici > ul > li > a {
     color: var(--brown2);
+}
+
+/* Responsive Design */
+@media (max-width: 575.98px) {
+    body > * {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body > * {
+        display: block;
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #row {
+        display: grid;
+        grid-template-columns: 7fr 5fr;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #row {
+        display: grid;
+        grid-template-columns: 8fr 4fr;
+        gap: 1rem;
+    }
+
+    #prednasky > div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .pred {
+        max-width: 45%;
+        margin: 0;
+        flex: 1 1 50%; /* Ensure wrapping to 2x2 */
+    }
+}
+
+@media (min-width: 1200px) {
+    #row {
+        display: grid;
+        grid-template-columns: 8fr 4fr;
+        gap: 1rem;
+    }
+
+    #prednasky > div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .pred {
+        max-width: 45%;
+        margin: 0;
+        flex: 1 1 50%; /* Ensure wrapping to 2x2 */
+    }
 }
