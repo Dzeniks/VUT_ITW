@@ -97,7 +97,7 @@ nav > ul > li > a:hover {
 }
 
 #cviceni {
-    background: linear-gradient(to top, white, #cecece);
+    background: linear-gradient(to right top, #cecece, white);
 }
 
 .news > div > img {
@@ -144,7 +144,7 @@ section {
 }
 
 #o-predmetu {
-    background-color: var(--gray_l);
+    background: linear-gradient(to right bottom, white, #cecece);
     padding-top: 2rem;
     padding-bottom: 4rem;
 }
