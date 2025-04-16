@@ -221,6 +221,7 @@ footer {
         display: grid;
         grid-template-columns: 8fr 4fr;
         gap: 1rem;
+        padding: 0;
     }
 
     #prednasky > div{
@@ -230,10 +231,27 @@ footer {
         margin: 0;
     }
 
+    .left-col {
+        padding-left: 2rem;
+    }
+
     .pred {
         max-width: 45%;
         margin: 0;
-        flex: 1 1 50%; /* Ensure wrapping to 2x2 */
+        flex: 1 1 50%;
+    }
+
+    #cviceni {
+        padding-left: 1rem;
+        padding-right: 2rem;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th {
+        padding: 0 1rem;
     }
 }
 
@@ -242,7 +260,9 @@ footer {
         display: grid;
         grid-template-columns: 8fr 4fr;
         gap: 1rem;
+        padding: 0;
     }
+    
 
     #prednasky > div{
         display: flex;
@@ -251,9 +271,26 @@ footer {
         margin: 0;
     }
 
+    .left-col {
+        padding-left: 2rem;
+    }
+
     .pred {
         max-width: 45%;
         margin: 0;
-        flex: 1 1 50%; /* Ensure wrapping to 2x2 */
+        flex: 1 1 50%;
+    }
+
+    #cviceni {
+        padding-left: 1rem;
+        padding-right: 2rem;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th {
+        padding: 0 1rem;
     }
 }
